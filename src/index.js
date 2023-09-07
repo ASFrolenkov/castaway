@@ -17,13 +17,11 @@ div.style.visibility = 'hidden';
 body.appendChild(div);
 const scrollWidth = div.offsetWidth - div.clientWidth;
 body.removeChild(div);
-console.log(scrollWidth)
 
 //open episodes modal
 episodesBtns.forEach(elem => {
     elem.addEventListener('click', (e) => {
         const dataEp = e.target.dataset.ep;
-        console.log(dataEp)
 
         modal.classList.add('show');
         body.style.overflow = 'hidden';

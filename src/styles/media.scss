@@ -1,0 +1,304 @@
+@media (max-width: 1025px) {
+    .home {
+        &__wrapper {
+            margin: 40px 35px 0px;
+            justify-content: space-around;
+        }
+        &__photo {
+            margin-right: 40px;
+            &_img {
+                height: 500px; 
+            } 
+        }
+        &__title {
+            font-size: 58px;
+            line-height: 64px;
+        }
+    }
+    .episodes {
+        &__title {
+            font-size: 40px;
+        }
+        &__item {
+            padding: 30px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        &__img {
+            max-height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &__subtitle {
+            font-size: 50px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+
+    .about {
+        &__photo {
+            height: 350px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__subtext {
+            font-size: 16px;
+        }
+        &__icon {
+            display: none;
+        }
+    }
+
+    .contact__left {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact__right {
+        margin-right: 0px;
+        & > form {
+            width: auto;
+        }
+    }
+    .contact__subwrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 25px;
+        gap: 40px;
+    }
+
+    .comments {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item {
+            padding: 50px;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .header {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .home {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__photo {
+            margin: 0px;
+            &::before {
+                display: none;
+            }
+            &_img {
+                height: 300px;
+            }
+        }
+        &__subwrapper {
+            text-align: center;
+        }
+        &__links_wrapper {
+            justify-content: space-around;
+        }
+    }
+    .episodes {
+        &__header {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__img {
+            border-radius: 16px
+        }
+        &__subtitle {
+            font-size: 22px;
+            line-height: 35px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        &__descr {
+            text-align: center;
+        }
+    }
+    .about {
+        &__wrapper {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+        &__photo {
+            height: 300px;
+            border-radius: 16px;
+        }
+        &__subwrapper {
+            text-align: center;
+        }
+    }
+    .contact {
+        &__left {
+            text-align: center;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &__right {
+            margin: 0px;
+        }
+        &__input {
+            padding: 14px 10px;
+            font-size: 16px;
+        }
+        &__subwrapper {
+            &::before {
+                display: none;
+            }
+        }
+        &__submit {
+            padding: 5px;
+            font-size: 12px;
+        }
+    }
+    .comments {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+        &__item {
+            padding: 30px;
+        }
+        &__text {
+            font-size: 24px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .header {
+        &__navigate > ul {
+            gap: 18px;
+        }
+    }
+    .home {
+        &__title {
+            font-size: 34px;
+            line-height: 45px;
+        }
+        &__links {
+            margin-top: 40px;
+        }
+    }
+    .underline {
+        &::after {
+            top: -35px;
+        }
+    }
+
+    .episodes {
+        &__title {
+            text-align: center;
+        }
+        &__item {
+            padding: 15px;
+            gap: 10px;
+        }
+        &__episod-number {
+            margin-top: 14px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__text {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        &__btn {
+            padding: 10px;
+            font-size: 12px;
+        }
+        &__descr > button {
+            margin-top: 8px;
+        }
+        &__wrapper {
+            padding: 100px 30px 160px;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            gap: 20px;
+        }
+        &__tag {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        &__name {
+            font-size: 24px;
+            line-height: 42px;
+            letter-spacing: 0px;
+            font-weight: 700;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 22px;
+            margin-top: 16px;
+        }
+        &__subtext {
+            font-size: 12px;
+            line-height: 22px;
+            margin-top: 16px;
+        }
+    }
+
+    .contact {
+        &__subwrapper {
+            padding: 10px;
+            gap: 15px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &__tag {
+            font-size: 12px;
+        }
+        &__input {
+            padding: 8px;
+            font-size: 12px;
+        }
+        &__submit {
+            width: 66px;
+            line-height: 18px;
+        }
+    }
+
+    .comments {
+        &__text {
+            font-size: 16px;
+            line-height: 27px;
+            margin-top: 14px;
+        }
+        &__name {
+            font-size: 14px;
+            margin-top: 12px;
+        }
+    }
+}
