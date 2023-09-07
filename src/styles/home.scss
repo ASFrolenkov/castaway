@@ -1,0 +1,70 @@
+.home {
+    &__wrapper {
+        margin: 40px 70px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__photo {
+        margin-right: 60px;
+        position: relative;
+
+        &_img {
+            border-radius: 14px;
+        }
+
+        &::before {
+            content: url('./img/photodecor.svg');
+            position: absolute;
+            top: -28px;
+            left: -28px;
+            height: 74px;
+        }
+    }
+
+    &__title {
+        margin-right: 60px;
+
+        color: $text-color;
+        font-weight: 400;
+
+        font-size: 70px;
+        line-height: 88px;
+        letter-spacing: 3.2px;
+    }
+
+    &__links {
+        margin-top: 90px;
+        padding: 0 22px;
+
+        &_title {
+            color: $text-color;
+            font-size: 15px;
+        }
+
+        &_wrapper {
+            display: flex;
+            gap: 17px;
+
+            margin-top: 16px;
+
+            &>li {
+                list-style: none;
+            }
+        }
+    }
+}
+
+.underline {
+    position: relative;
+
+    &::after {
+        content: url(./img/underline.svg);
+        position: absolute;
+        left: 0;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}

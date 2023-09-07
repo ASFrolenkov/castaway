@@ -1,0 +1,86 @@
+.contact {
+    &__wrapper {
+        padding: 100px 70px;
+    }
+
+    &__subwrapper {
+        background-color: $items-color;
+        min-height: 387px;
+        border-radius: 32px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        &::before {
+            content: url('./img/contact-decor.svg');
+            position: absolute;
+            bottom: -26px;
+            left: -38px;
+        }
+    }
+
+    &__left {
+        margin-left: 60px;
+        margin-top: 60px;
+        background: none;
+    }
+
+    &__tag {
+        background: none;
+        color: $hover-color;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__title {
+        background: none;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 79px;
+        letter-spacing: 2.88px;
+    }
+
+    &__right {
+        margin-right: 60px;
+        margin-top: 60px;
+        background: none;  
+    }
+
+    &__right > form {
+        display: flex;
+        flex-direction: column;
+        width: 522px;
+        gap: 20px;
+        background: none;
+    }
+
+    &__input {
+        padding: 26px 0px 26px 19px;
+        font-size: 24px;
+        border-radius: 6px;
+        border: 1px solid $bg-color;
+        background: $bg-color;
+        color: $text-color;
+    }
+
+    &__submit {
+        color: $text-color;
+        padding: 10px 19px;
+        width: 87px;
+        font-size: 15px;
+        line-height: 28.8px;
+        font-weight: 700px;
+
+        border: 1px solid $hover-color;
+        background-color: $hover-color;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $text-color;
+            color: $hover-color;
+        }
+    }
+}

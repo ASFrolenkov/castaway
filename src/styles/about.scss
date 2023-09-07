@@ -1,0 +1,53 @@
+.about {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        padding: 100px 70px;
+    }
+
+    &__icon {
+        width: 112px;
+        height: 112px;
+        border-radius: 100%;
+        background-color: $hover-color;
+        padding: 22px 24px 40px 34px;
+
+        & > img {
+            transform: rotate(-90deg);
+            height: 64px;
+            width: 38px;
+        }
+    }
+
+    &__tag {
+        font-size: 18px;
+        font-weight: 400;
+        color: $hover-color;
+        margin-top: 20px;
+        line-height: 27px;
+    }
+
+    &__name {
+        color: $text-color;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 79px;
+        letter-spacing: 2.88px;
+    }
+
+    &__text {
+        color: rgba($color: $text-color, $alpha: 0.7);
+        font-size: 22px;
+        line-height: 33px;
+        margin-top: 28px;
+    }
+
+    &__subtext {
+        color: rgba($color: $text-color, $alpha: 0.7);
+        font-size: 22px;
+        line-height: 33px;
+        margin-top: 33px;
+    }
+}

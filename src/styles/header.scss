@@ -1,0 +1,48 @@
+.header {
+    padding: 26px 0;
+
+    &__logo {
+        margin: 17px 0;
+    }
+
+    &__wrapper {
+        height: 67px;
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__navigate {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navigate > ul {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    &__nav-link {
+        font-size: 17px;
+        line-height: 27px;
+
+        list-style: none;
+
+        & > a {
+            text-decoration: none;
+
+            color: $text-color;
+
+            transition: all 0.3s;
+
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+}
+
+#svg-fill {
+    fill: $text-color;
+}

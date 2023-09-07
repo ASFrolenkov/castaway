@@ -1,0 +1,97 @@
+.episodes {
+
+    &__wrapper {
+        padding: 100px 70px 160px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        color: $text-color;
+        font-weight: 400;
+        font-size: 64px;
+        letter-spacing: 2.88px;
+    }
+
+    &__btn {
+        padding: 12px 19px;
+        border-radius: 6px;
+        background-color: $hover-color;
+        border: 1px solid $hover-color;
+        color: $text-color;
+        font-size: 17px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $text-color;
+            border: 1px solid $hover-color;
+            color: $hover-color;
+        }
+    }
+
+    &__subwrapper {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__item {
+        padding: 40px;
+        background-color: $items-color;
+        border-radius: 32px;
+        display: flex;
+        gap: 53px;
+    }
+
+    &__descr {
+        background-color: $items-color;
+        padding-top: 7px;
+
+        & > button {
+            margin-top: 18px;
+        }
+    }
+
+    &__tag {
+        padding: 0 16px;
+        display: inline;
+        border-radius: 6px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+        color: $text-color;
+    }
+
+    &__episod-number {
+        font-size: 17px;
+        color: $hover-color;
+        font-weight: 400;
+        background: none;
+        margin-top: 48px;
+    }
+
+    &__subtitle {
+        background: none;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 64px;
+        letter-spacing: 2.56px;
+        line-height: 70px;
+        margin-top: 18px;
+    }
+
+    &__text {
+        color: rgba($color: $text-color, $alpha: 0.7);
+        font-size: 22px;
+        line-height: 33px;
+        margin-top: 28px;
+        margin-bottom: 18px;
+        background: none;
+    }
+}
