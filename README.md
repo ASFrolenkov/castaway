@@ -1,2 +1,2 @@
 # castaway
-unique-custard-9a6f42.netlify.app
+https://unique-custard-9a6f42.netlify.app/
